@@ -11,3 +11,35 @@
 // | 5                  | 138                |
 //
 // Construya un algoritmo que calcule e imprima el costo total que representa un paciente.
+
+const tipoEnfermedad = Math.round(Math.random() * (5 - 1) + 1); // 5 tipos de enfermedad
+const diasInternacion = Math.round(Math.random() * (10 - 1) + 1); // maximo dias internacion 10
+console.log('Tipo de enfermedad ingresada: ' + tipoEnfermedad);
+console.log('Dias de internacion ingresados: ' + diasInternacion);
+
+let costoInternacion
+switch (tipoEnfermedad) {
+  case 1:
+    costoInternacion = 125;
+    break;
+  case 2:
+    costoInternacion = 116;
+    break;
+  case 3:
+    costoInternacion = 120;
+    break;
+  case 4:
+    costoInternacion = 132;
+    break;
+  case 5:
+    costoInternacion = 138;
+    break;
+  default:
+    costoInternacion = 0;
+
+    break;
+}
+const costoTotal =  costoInternacion * diasInternacion
+console.log(`El costo de internarse ${diasInternacion} dias con la enfermedad de tipo ${tipoEnfermedad} en el hospital es: ${costoTotal}`)
+/// para poder mostrar las varibles entre el texto tengo que encerralas entre llaves y con un signo pesos adelante. y las comillas simples son las que estan 
+/// al lado de la letra P.

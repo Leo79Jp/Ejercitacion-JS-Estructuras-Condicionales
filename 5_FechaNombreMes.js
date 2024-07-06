@@ -2,15 +2,11 @@
 // Si el número leído para el mes no está entre 1 y 12 imprimir un mensaje de error.
 // Comprobar que el día se encuentre entre 1 y 31 y el año sea mayor que 2000.
 
-// const fecha = new Date("6-4-2024");
-// const año = fecha.getFullYear();
-// const mes = fecha.getMonth() + 1;
-// const dia = fecha.getDate();
+const prompt = require('prompt-sync')({ siging: true})
 
-// const fecha= '7-4-2024'
-const dia = 31
-const mes = 7
-const año = 2022
+let dia = parseInt(prompt('Ingrese dia: ')); 
+let mes = parseInt(prompt('Ingrese mes: ')); 
+let año = parseInt(prompt('Ingrese año: ')); 
 
 if (dia < 1 || dia > 31) {
   console.log("Error!! el dia esta fuera de rango");
